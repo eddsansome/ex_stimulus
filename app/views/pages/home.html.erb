@@ -1,12 +1,15 @@
-<section data-controller="chat" class="w-full flex flex-col text-center">
-<h1>lets make a chat server</h1>
-<input data-chat-target="message" type="text" class="">
-<button data-action="click->chat#send_message">Send</button>
-
-
-<span data-chat-target="output">
+<section data-controller="chat" class="w-full flex flex-col text-center items-center">
+<h1>SPG chat</h1>
+<div class="w-1/2 flex flex-col">
+<input data-chat-target="name" type="text" placeholder="wots ur name" class="">
+<input data-chat-target="message" type="text" placeholder="add msg here" class="">
+</div>
+<div>
+<button data-action="click->chat#send_message" type="button" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Send</button>
+</div>
+<div class="pb-2"></div>
+<span id="messages">
 </span>
 </section>
-
 
 
